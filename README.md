@@ -46,6 +46,8 @@ Creamos un par de personas, una feliz y otra no tanto
 
 Y les creamos API keys
 
+    # El "-d ''" es para mandar un POST vacío, y que las keys se autogeneren.
+    # Si se quisiera, se podrían settear API keys predefinidas
     curl -d '' localhost:8001/consumers/fun_person/key-auth
     curl -d '' localhost:8001/consumers/sad_person/key-auth
 
